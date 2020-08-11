@@ -1,0 +1,609 @@
+.margin{       /* Used to format the entire page - primary reason was to center the content (i.e. margins both sides) */
+    margin: auto;
+    width: 80%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    font-size: 25px;
+    text-align: center;
+}
+h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+h5{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing:normal;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+/* .......NAVBAR.................................................... ................*/ 
+/* Code for navigation bar was adapted from w3schools 'CSS Navigation Bar' available at: "https://www.w3schools.com/css/css_navbar.asp" . Instead of floating as on the page, the list was instead centered using the display: flex property */
+
+.navigation{
+    background-color: dimgrey; 
+    height: 47px; /* to prevent it from eunning into the image */
+
+}
+#list2{
+    color: white;
+    background-color: dimgrey; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#list2 ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding:0px;
+}
+#list2 li{
+    width: 20%;
+    text-decoration: none;
+}
+#list2 li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 10px 15px;
+    text-align: center;
+}
+#list2 li:hover{
+    background-color:darkgray;
+}
+
+
+/* ..................................................................................*/
+
+/*--Main Figure --------- */
+
+/* this code was adopted from w3schools 'CSS Styling images' available at: https://www.w3schools.com/css/css3_images.asp - makes a responsive image */
+#figure1{        /* Used to style first large spanning image */
+    max-width: 100%;
+    opacity: 0.7; 
+    margin: 0px;
+}
+
+/* This and .centered were taken directly from w3c 'How to -position text over image, available at: https://www.w3schools.com/howto/howto_css_image_text.asp */
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-size: 60px;
+    width: 80%;
+}
+
+/*------Main body----------*/
+
+/* taken directly from lecture example: 'overflow_auto.html' - used to contain images within the section elements - ".clearfix" */ 
+.section {      /*------- Class used in main body for formatting ----------*/
+    overflow: auto;    
+    margin: auto;  
+    width: 90%;
+    text-align: left;
+
+}
+.featurecontainer{  /*------- Used for the profile picture ----------*/
+    float:left;
+    width: 30%;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    height: auto;
+ 
+}
+#figure2{       /* Used to style the figure as part of the profile part */
+    border-radius: 50%;  /* make the image circular */
+}
+
+.textcontainer{     /*------- Used for the profile summary ----------*/
+    float:left;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    overflow: auto;
+}
+.featurecontainer2{  /*------- Used for the accompanying image for each section ----------*/
+    float:left;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+   
+}
+.figure3{           /*------- Used to style accompanying images for each section ----------*/
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.textcontainer2{         /*------- Used for the Text description for each section ----------*/
+    float:left;
+    width: 60%;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 0px;
+    overflow: auto;
+
+}
+
+/* Adapted fromm w3schools 'How TO align images side by side' available at: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.homeimage{             /*------- Used for the Images in career interest section ----------*/
+    float: left;
+    width: 33%;
+    
+}
+#homecontainer{         /*------- Used for the Images in career interest section ----------*/
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* --------HOBBIE.html UNIQUE CSS -----------------------------------------------------------------------*/
+
+/* main images for page - side by side -Css for 'hobbyimage' and 'rowb::after' taken from w3cschools 'How To- align images side by side available at: "https://www.w3schools.com/howto/howto_css_images_side_by_side.asp" */
+.hobbyimage{
+    float: left;
+    width: 50%;
+    
+}
+#rowb::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#hobbiestitle{                  /*---------Main title on large image--------*/
+    text-align: center;
+    font-size: 40px;
+    background-color: dimgray;
+    color: white;
+    margin-bottom: 0px;
+}
+
+/*---------------- grid structure on all hobbies adapted from w3chools 'CSS Grid Layout Module'. available at: "https://www.w3schools.com/css/css_grid.asp" ---- */
+
+.hobbies-container{  /* ------------ For Climbing, surfing and hikinh -------------*/
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 10px;
+}
+.hobbies-video{
+    margin-top: 20px;
+}
+#surfvideo{
+    margin-right: 10px;
+}
+
+.book-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    column-gap: normal;
+}
+.book-item{
+    margin-top: 30px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------TUTOR.HTML UNIQUE CSS--------------------------------------------------------------------------- */
+
+ 
+/* this code was adopted from w3schools 'CSS Styling images' available at: https://www.w3schools.com/css/css3_images.asp - makes a responsive image */
+#tutorfigure{        /* Used to style first large spanning image */
+    max-width: 100%;
+    margin: 0px;
+   
+}
+
+/* Table content adapted from a mixture of two w3schools resources, css tables, available at: https://www.w3schools.com/css/css_table.asp and  CSS Flexbox, available at: w3schools.com/css/css3_flexbox.asp */
+.table_container{ /* to keep content in the center */
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height:500px;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+td{
+    width: 12%; /* to make sure its all even */
+}
+th{
+    color: white;
+    background-color: dimgray;
+}
+
+/*animation which transitions the colour of the timetable from grey to green, taken from w3schools 'CSS Animations' available at: https://www.w3schools.com/css/css3_animations.asp */
+.free{
+    background-color: gainsboro;
+    animation-name: timetable;
+    animation-delay: 3s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes timetable{
+    from{background-color: white;}
+    to{background-color: green;}
+}
+
+.notfree{
+    background-color: gainsboro;
+}
+
+td:first-child{
+    color: white;
+    text-align: center;
+    background-color: dimgray;
+}
+
+/* these three lines were taken from w3schools 'How to - center images, available at: https://www.w3schools.com/howto/howto_css_image_center.asp */
+#figureT{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    width: 50%;
+}
+#tutortitle{
+    font-size: 80px;
+    text-align: center;
+}
+#tutorsummary{
+    font-size: 20px;
+    text-align: left;
+}
+
+#tutortext{
+    font-size: 20px;
+}
+li.normal{
+    float:none;
+    border: none;
+}
+
+/* taken from HOW TO- Button group, w3schools available at: https://www.w3schools.com/howto/howto_css_button_group.asp  I put in the display:flex and justify-content: center myself to center the headings */
+.subjectgroup button{
+    background-color: forestgreen; 
+    border: 1px solid black;
+    color: white; 
+    padding: 15px 30px; 
+    margin: 10px;
+    float: left;
+    overflow: auto;   
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    font-size: 13px;
+    width:200px;
+    border-radius: 12px;
+}
+
+/* Clear floats (clearfix hack) */
+.subjectgroup:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.subjectgroup{
+    display: flex;
+    justify-content: center;
+}
+
+
+#subheading{
+    text-decoration: underline;
+}
+
+
+
+/* CSS to style form - taken from w3cschools 'CSS forms' available at: "https://www.w3schools.com/css/css_form.asp" */
+input[type=text], select {      /*------------text input boxes --------------*/
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+textarea{           /*------------Text areas button --------------*/
+    resize: none; /*gets rid of grabber in bottom right corner */
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+input[type=submit]{               /*------------submit button --------------*/
+    width: 15%;
+    padding: 15px 10px;
+    background-color: gainsboro;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=submit]:hover{        /*------------submit button --------------*/
+    background-color: grey;
+    box-shadow: inset 0 0 0 5px black;  /*---taken from 8.inset border available at: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+}
+.tutorform{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#formstyle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+    
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ----------GALLERY.HTML UNIQUE CODE ------------------------------------------------------------------------------*/
+
+#gallerytitle{
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+/* Gallery taken directly from w3cschools 'CSS image Gallery', available at: "https://www.w3schools.com/css/css_image_gallery.asp" */
+.imagecontainer{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+                            /*image container means that as soon as there is space that photo will allign in the above line, and go down as the broweser is sized down i.e. scales to browser size */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    margin: 10px;
+    width: 300px;
+    
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 300px; /*fixed height to ensure homogeneity */
+}
+
+div.gallery img:hover {
+    opacity: 0.5;     /* used to turn the photos opaque when the mouse is on them */     
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    height: 30px;  /*fixed height for desc box to ensure homogeneity */
+}
+
+#lastimage{
+    clear: right;
+}
+
+
+
+/*-----Blog.html UNIQUE -----------------------------------------------------------------------------------------------------------------------------*/
+figcaption{
+    font-style: italic;
+}
+.blogfigure{
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+#titlecolor{
+    color: black;
+}
+/* both enlarge classes were take from the w3c school page called 'How To-Zoom on hover'. I have made some alterations but used largely similar code. This is available at: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+.enlarge {
+    padding: 20px;
+    background-color: white;
+    transition: transform .2s;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+}
+.enlarge:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+/*-------------------*/
+.fullwidthtext{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.columntext{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px
+}
+/* this column text attribute was taken directly, unaltered from an article on css features as number 11. 'CSS columns' This is available at: https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use */
+
+.columntext p{
+    -moz-columns:3;
+    -webkit-columns:3;
+    columns:3;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------SUBMIT.HTML ------------------------------------------*/
+#submit{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+#figureSub{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    width: 50%;
+}
+
+#buttoncontainer{               /* to center button */
+    display: flex;
+    justify-content: center;
+    
+}
+/* code for next 3 classes is taken from w3schools 'CSS Buttons', available at: https://www.w3schools.com/css/css3_buttons.asp */
+.gobackbutton {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonchange {
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+}
+
+.buttonchange:hover {
+    background-color: green;
+    color: white;
+}
+/*------------ Footer----------------------------------------*/
+
+/*Footer - Structure adapted from 'How to Code a Homepage Template with HTML5 and CSS3' available at: https://medialoot.com/blog/how-to-code-a-homepage-template-with-html5-and-css3/ */
+
+.footer{
+    height:auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    background-color: dimgray;
+    color: white;
+    overflow: auto;
+    border-top: 1px solid black;
+}
+#sitemap{           /*----------- Sitemap features--------------*/
+    width: 150px;
+    float:left;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+#sitemap ul{
+    list-style-type: none;
+    
+}
+#sitemap li{
+    margin: 10px;
+}
+#sitemap a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+#contact{            /*----------- Each of the three contact images and links--------------*/
+    width:70%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    float:left; 
+    overflow: auto;
+}
+
+#contact ul{
+    width:11%;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+    margin-top: 0;
+    padding-right: 100px;
+    list-style-type: none;
+}
+
+#contact ul li a{
+    margin: 10px 0px;
+    text-decoration: none;
+    color: white;    
+}
+.contactimage{
+    width:100%;
+    max-width: 50px;
+    height:auto;
+    margin-left: 5px;
+}
+/*
+.contactlink{
+    font-size: 20px;
+}
+*/
+
+

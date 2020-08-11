@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang ='en'>  
+    <head>
+        <meta charset = "utf-8" >
+        <title> Niall Delahunty </title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class = "margin">
+        <!-- Code for navigation bar was adapted from w3schools 'CSS Navigation Bar' available at: "https://www.w3schools.com/css/css_navbar.asp" . Instead of floating as on the page, the list was instead centered using the display: flex property  -->
+        <nav class="navigation">
+                <div id="list2">   
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href= "hobbies.html">Hobbies</a></li>
+                        <li><a href= "tutor.html">Tutoring</a></li>
+                        <li><a href= "gallery.html">Gallery</a></li>
+                        <li><a href= "blog.html">Blog</a></li>
+                    </ul>
+                </div> 
+        </nav>
+        <figure id = "figure1">  <!-- large spanning figure, container class and text on image - from w3C 'How To-position text over image available at https://www.w3schools.com/howto/howto_css_image_text.asp  -->
+            <div class = "container">
+                <img src = "images/Patagonia.jpg" alt = "Mountain Range" style = "width:100%;height:100%;" >
+                <h1 class = "centered" style="font-size:6vw;"> - Niall Delahunty - <br> Personal Website </h1>
+            </div>
+        </figure>
+        
+        <hr>
+         <!-- title of first section -->
+        <h2> Who am I?</h2>
+        <hr>
+        
+        <div class ="section"> <!-- content of who am I section -->
+                <div class = "featurecontainer">
+                    <img src = "Images/Portrait.png" alt = "Profile Picture" style = "width:80%;height:80%;" id = "figure2" >
+                </div>
+                <div class="textcontainer">
+                       <p> My name is Niall Delahunty, I am currently completing a H.Dip in computing. This website was originallly for the purpose of a web app development assignment but I now use it as a personal website. The website is multi-faceted, it acts as a resume demonstrating my education background and merits, as well as professional experience, interests and projects that I have completed. The tutoring page links to a booking system for one to one or group grinds in a variety of subjects. The hobbies and galleries pages will more reflect what I like to do with my free time and a visual representation of that.  </p>
+                </div>
+        </div>
+        
+        <hr><!-- Education header -->
+        <h2> Education</h2>
+        <hr>
+        
+        <section class ="section"> <!-- BSc -->
+            <div class = "featurecontainer2">
+                <img src = "images/science_placeholder.jpeg" alt = "BSc" style="width:90%;height:90%;"> 
+            </div>
+            <div class="textcontainer2">
+                <h3> BSc Biomedical Health and Life Science (BHLS) - UCD/Lund University</h3> <p> Following a long held fascination with biology, I pursued this course to gain a better understanding of disease, its molecular mechanisms, current treatments and the tools being used to research new more effective ailments and improvements in outcomes. BHLS provided a strong foundation in basic science spanning the areas of pharmacology, genetics, biochemistry and physiology. However its focus was on translational research, in essence how to bring new scientific findings into a clinically relevant context (i.e. bench to bedside). During this time I was fortunate enough to gain experience both in UCD and in two universities in sweden (Lund University and Karolinska Institute) in exciting areas including infectious medicine and cancer biology.</p>
+            </div>
+        </section>
+ 
+        <section class ="section"> <!-- MSc -->
+            <div class = "featurecontainer2">
+                <img src = "images/virus.jpg" alt = "MSc" style = "width:90%;height:90%;" class = "figure3" >  
+            </div>
+            <div class="textcontainer2">
+            <h3> Research MSc Molecular Biology - UCD </h3>
+            <p> Having gained some experience in my udergraduate degree I was interested in deep diving further into the world of biological research. I have always found the molecular mechansims underpinning cellular activity to be particularly interesting and so when an opportunity came to undertake a year of research in this area I jumped at the opportunity! In my research I was attempting to elucidate a potential molecular mechanism underpinning an apparent link between hypercapnia (high blood carbon dioxide) and immune suppression. Specifically I was investigating changes in ubiquitylation chains in key regulatory NF-kB proteins. </p>
+            </div>
+        </section>
+        
+
+        
+        <section class ="section"> <!-- Computer Science -->
+            <div class = "featurecontainer2">
+                <img src = "images/computers.jpeg" alt = "H.Dip" style = "width:90%;height:90%;" class = "figure3"  >  
+            </div>
+            <div class="textcontainer2">
+            <h3> Higher Diploma in Computing </h3>
+            <p> Given the complexity of biological systems and the vast amount of data an experiment can yield, more advanced computational aids and methods have quickly become powerful tools for gaining new biological insights. Having a shallow exposure, I began to appreciate the power of programming and really enjoyed the idea of conceptualising something and then having the practical skills to create it. However I was not sure if I preferred more building things (software engineering) or making sense of data (analytics). This course provided me the opportunity to further explore these interests while gaining a strong foundation in computer science. Although not the quickest route I felt this was the best way to set up a strong foundation. </p>
+            </div>
+        </section>
+        
+        
+        <hr><!-- Work Experience header -->
+        <h2> Professional Work Experience </h2>
+        <hr>
+        
+        
+        <section class = "section"> <!-- NVRL -->
+            <h4> Lab attendant - National Virus Reference Laboratory <br> <em>January-August 2019</em></h4>
+            <p>I worked as part of the specimen reception team in a laboratory accredited by both the Irish National Accrediation Board (INAB) and the World Health Organisation (WHO). Collectively our primary responsibility was to unpackage, organize, and prepare over 1000 daily incoming patient samples for diagnostic testing and analysis for infectious diseases ranging from HIV and Hepatitus to influenza and mumps arriving as a multitude of different sample types</p>
+        </section>
+        
+        <section class = "section"> <!-- Post-graduate Researcher -->
+            <h4> Post-graduate Researcher <br> <em>September 2017-2018</em></h4>
+            <p>I worked as part of the Cummins research group. The overall research theme was to investigate a link between high CO2(hypercapnia) and suppression of immunity. I worked on an independent project investigating differential ubiquitination of the NF-kB pathway as a potential underlying mechanism. As a result of this body of work I was awarded a research MSc.</p>
+        </section>
+        <hr>
+        <header class = "header">  <!-- Career interests header -->
+            <h2> Career Interests</h2>
+        </header>
+        <hr>
+    
+        <!-- Adapted fromm w3schools 'How TO align images side by side' available at: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
+        <div id="homecontainer">
+            <div>
+                <div class ="homeimage">
+                    <img src="Images/BenAI.jpg" alt="BAI" style="width:100%;height:150px">
+                </div>
+                <div class ="homeimage">
+                    <img src="Images/exsci.png" alt="Exscientia" style="width:80%;height:150px">
+                </div>
+                <div class ="homeimage">
+                    <img src="Images/Az.jpg" alt="AZ" style="width:100%;height:150px">
+                </div>
+            </div>
+        </div>
+         <div class = "section"> <!-- AI -->
+            <p>My academic interests overall are learning how computational methods can be used to solve biological problems. I would like to gain insights into different specific fields and understand the landscape better. At the moment I’m sure I’m not alone in thinking AI applications to biological data or for drug discovery/design is a particularly interesting prospect. My academic interest is in solving biological questions and finding solutions to health related problems. In the era of profound technology growth I have noticed how quickly submerged we become in vast amount of data. I see the ability to be able to handle, manipulate and interpret large data sets is quickly becoming an essential skill. 
+        </div>
+        <br>
+        
+        <!--   Footer - Structure adapted from 'How to Code a Homepage Template with HTML5 and CSS3' available at: https://medialoot.com/blog/how-to-code-a-homepage-template-with-html5-and-css3/-->
+        <footer class="footer">
+            <div class = "wrapper">
+                <div id="sitemap">
+                    <ul>
+                        <li><h5>Sitemap</h5></li>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href= "hobbies.html">Hobbies</a></li>
+                        <li><a href= "tutor.html">Tutoring</a></li>
+                        <li><a href= "gallery.html">Gallery</a></li>
+                        <li><a href= "blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <ul>
+                        <li><h5>GitHub</h5></li>
+                        <li><a href="https://github.com/TechyBiologist" >
+                            <img src = "Images/github.png" alt = "GitHub button" style = "width:50px;height:50px;" class="contactimage"></a></li>
+                        <li><a href="https://github.com/TechyBiologist">Github.com/TechyBiologist</a></li>
+                    </ul>
+                    <ul>
+                        <li><h5>LinkedIn</h5></li>
+                        <li><a href="https://www.linkedin.com/in/nialldelahunty/">
+                            <img src = "Images/LinkdIn.png" alt = "LinkdIn button" style = "width:50px;height:50px;" class = "contactimage" ></a></li>
+                        <li><a href="https://www.linkedin.com/in/nialldelahunty/" class="contactlink">linkedin.com/in/nialldelahunty</a></li>
+                    </ul>
+                    <ul>
+                        <li><h5>Email</h5></li>
+                        <li><a href="mailto:nialldelahunty1@gmail.com"><img src = "Images/gmail.png" alt = "Email icon" style = "width:50px;height:50px;" class="contactimage"></a></li>
+                        <li><a href="mailto:nialldelahunty1@gmail.com">nialldelahunty1@gmail.com</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </footer>
+        
+
+
+
+    </body>
+
+   
+
+
+
+
+   
+
+    
+    
+     
