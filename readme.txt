@@ -1,5 +1,3 @@
-----README-NIALL_DELAHUNTY_A1_COMP30680------
-
 This is a personal website built to act as both a CV/resume as well as a reflection of my interests and experiences.
 In this readme file I will outline exactly how my website has fit the specified requirements and explain where the
 in my website I have placed those specific elements.
